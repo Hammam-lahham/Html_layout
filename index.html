@@ -1,0 +1,379 @@
+<!DOCTYPE htmllayout>
+<html LANG="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Layout</title>
+    <style>
+
+        img {width: 80px}
+        #span {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5cm;
+            margin-bottom: 1.5cm;
+            color:white;
+        }
+        img {
+            display: flex;
+            flex-direction: column;
+        }
+        .welcome {
+            display: flex;
+            height: 7cm;
+            font-size: 1.5em;
+            background-color: rgb(119, 119, 119);
+            justify-content: center;
+            align-items: center;
+            color:white
+        }
+        html,body {
+            background-color: #080d27;
+            color:white
+        }
+h2 {
+    font-family: Coves Bold;
+    
+}
+        @font-face {
+  font-family: 'Coves Light';
+  src: url('/home/smx2a/cleanmatic/Coves Light.otf') format('truetype'); 
+}
+
+@font-face {
+  font-family: 'Varino';
+  src: url('/home/smx2a/cleanmatic/Varino - Normal.ttf') format('truetype'); 
+}
+
+@font-face {
+  font-family: 'Coves Bold';
+  src: url('/home/smx2a/cleanmatic/Coves Bold.otf') format('truetype'); 
+}
+
+    </style>
+  </head>
+<body>
+    <div id="span">
+        <span>🤖</span>
+        <span>RobotWeb</span>
+        <span>🔎</span>
+    </div>
+
+
+<img src="https://gerardfp.github.io/htmllayout/img/1.webp">
+<img src="https://gerardfp.github.io/htmllayout/img/2.webp">
+<img src="https://gerardfp.github.io/htmllayout/img/3.webp">
+<img src="https://gerardfp.github.io/htmllayout/img/4.webp">
+
+<p 
+style="color: black;"
+class="welcome">Welcome to RobotWeb</p> 
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br>
+
+<style>
+    caja_2 {
+        resize: both;
+        overflow: auto;
+        background-color: rgb(154, 216, 255);
+        display: flex;
+        justify-content: center;
+    
+    }
+    caja_2 div {
+        background-color: rgb(248, 235, 216);
+        color: black;
+        font-family: Coves Bold;
+        font-size: 17px;
+    }
+</style>
+
+<h2>Ejercicio 2</h2>
+
+<caja_2>
+    <div>
+        <p>Estoy siempre centrado</p>
+    </div>
+</caja_2>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<style>
+    caja_3 {
+        resize: both;
+        overflow: auto;
+        background-color: rgb(145, 208, 247);
+        color: black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    caja_3 div {
+        background-color: rgb(248, 232, 208);
+        color:black;
+        flex: 0 1 150px;
+        margin: 5px;
+        font-family: Coves Bold;
+        font-size: 17px;    }
+</style>
+
+<h2>Ejercicio 3</h2>
+
+<caja_3>
+    <div>
+        <p>Crezco hacia abajo y tengo un ancho máximo de 150px</p>
+    </div>
+    <div>
+        <p>Crezco hacia abajo y tengo un ancho máximo de 150px</p>
+    </div>
+    <div>
+        <p>Crezco hacia abajo y tengo un ancho máximo de 150px</p>
+    </div>
+</caja_3>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<style>
+    caja_4 {
+        resize:both;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: minmax(150px, 25%) 1fr;
+    }
+    caja_4 div1 {
+        background-color: rgb(226, 45, 45);
+        font-family: Coves Bold;
+        font-size: 17px;
+        color:black;        
+    }
+    caja_4 div2 {
+        background-color: rgb(248, 186, 195);
+        color:black;
+        font-family: Coves Bold;
+        font-size: 17px;    }
+</style>
+
+<h2>Ejercicio 4</h2>
+
+<caja_4>
+    <div1>
+        <p>Tengo un ancho mínimo de 150px, y un máximo del 25%</p>
+    </div1>
+    <div2>
+        <p>Ocupo el resto de espacio sobrante</p>
+    </div2>
+</caja_4>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<style>
+    caja_5 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+    caja_5 div1{
+        background-color: rgb(255, 255, 224);
+        color: black;
+        font-family: Coves Bold;
+        font-size: 17px;    }
+    caja_5 div2{
+        background-color: rgb(252, 174, 144);
+        color: black;
+        font-family: Coves Bold;
+        font-size: 17px;    }
+    caja_5 div3{
+        background-color: rgb(245, 178, 188);
+        color: black;
+        font-family: Coves Bold;
+        font-size: 17px;    }
+</style>
+
+<h2>Ejercicio 5</h2>
+
+<caja_5>
+    <div1>
+        <p>Ocupo solo la altura que necesito</p>
+    </div1>
+    <div2>
+        <p>Ocupo el resto de altura sobrante</p>
+    </div2>
+    <div3>
+        <p>Ocupo solo la altura que necesito</p>
+    </div3>
+</caja_5>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<style>
+    caja_6 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: minmax(150px, 25%) 1fr minmax(150px, 25%);
+        grid-template-rows: auto 1fr auto;
+    }
+    caja_6 div1 {
+        background-color: rgb(247, 186, 195);
+        color: black;
+        grid-column: 1/4;
+        font-family: Coves Bold;
+        font-size: 17px;
+    }
+    caja_6 div2 {
+        background-color: rgb(157, 248, 248);
+        color: black;
+        font-family: Coves Bold;
+        font-size: 17px;
+    }
+    caja_6 div3 {
+        background-color: rgb(248, 174, 145);
+        color: black;
+        font-family: Coves Bold;
+        font-size: 17px;
+    }
+    caja_6 div4 {
+        background-color: rgb(245, 245, 186);
+        color: black;
+        font-family: Coves Bold;
+        font-size: 17px;
+    }
+    caja_6 div5 {
+        background-color: rgb(160, 235, 160);
+        color: black;
+        grid-column: 1/4;
+        font-family: Coves Bold;
+        font-size: 17px;
+    }
+</style>
+
+<h2>Ejercicio 6</h2>
+
+<caja_6>
+    <div1>
+        <p>Ocupo solo la altura que necesito </p>
+    </div1>
+    <div2>
+        <p>Ocupo el ancho que necesito, y crezco de altura</p>
+    </div2>
+    <div3>
+        <p>Ocupo el ancho restante, y crezco de altura </p>
+    </div3>
+    <div4>
+        <p>Ocupo el ancho que necesito, y crezco de altura </p>
+    </div4>
+    <div5>
+        <p>Ocupo solo la altura que necesito </p>
+    </div5>
+</caja_6>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<style>
+    caja_7 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    caja_7 div1 {
+        background-color: rgb(252, 161, 174);
+        color: black;
+        font-family: Coves Bold;
+        font-size: 17px;
+    }
+    caja_7 div2 {
+        background-color: rgb(220, 238, 255);
+        color: black;
+        font-family: Coves Bold;
+        font-size: 17px;
+    }
+    caja_7 div3 {
+        background-color: rgb(248, 166, 133);
+        color: black;
+        font-family: Coves Bold;
+        font-size: 17px;
+    }
+    caja_7 div4 {
+        background-color: rgb(240, 240, 165);
+        color: black;
+        font-family: Coves Bold;
+        font-size: 17px;
+    }
+</style>
+
+<h2>Ejercicio 7</h2>
+
+<caja_7>
+    <div1>
+        <p>Tenemos un ancho mínimo de 100px. Si no cabemos todos en una fila, ocupamos otra </p>
+    </div1>
+    <div2>
+        <p>Tenemos un ancho mínimo de 100px. Si no cabemos todos en una fila, ocupamos otra </p>
+    </div2>
+    <div3>
+        <p>Tenemos un ancho mínimo de 100px. Si no cabemos todos en una fila, ocupamos otra </p>
+    </div3>
+    <div4>
+        <p>Tenemos un ancho mínimo de 100px. Si no cabemos todos en una fila, ocupamos otra </p>
+    </div4>
+</caja_7>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<style>
+    caja_8 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        padding: 200px;
+    }
+    caja_8 div1 {
+        background-color: rgb(241, 185, 194);
+        color: black;
+        font-family: Coves Bold;
+        font-size: 17px;
+    }
+    caja_8 div2{
+        background-color: rgb(158, 238, 238);
+        color: black;
+        font-family: Coves Bold;
+        font-size: 17px;
+    }
+    caja_8 div3 {
+        background-color: rgb(248, 176, 147);
+        color: black;
+        font-family: Coves Bold;
+        font-size: 17px;
+    }
+    caja_8 div4 {
+        background-color: rgb(241, 241, 190);
+        color: black;
+        font-family: Coves Bold;
+        font-size: 17px;
+    }
+</style>
+
+<h2>Ejercicio 8</h2>
+
+<caja_8>
+    <div1>
+        <p>Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra </p>
+    </div1>
+    <div2>
+        <p>Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra </p>
+    </div2>
+    <div3>
+        <p>Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra </p>
+    </div3>
+    <div4>
+        <p>Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra </p>
+    </div4>
+</caja_8>
+
+</body>
+</html>
